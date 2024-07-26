@@ -6,10 +6,10 @@
     "background" : {
         "scripts" : ["background.js"]
     },
-    "icons" : {
-        "16" : "16x16",
-        "48" : "48x48",
-        "128" : "128x128"
+    "Images" : {
+        "16" : "images/16x16.png",
+        "48" : "images/48x48.png",
+        "128" : "images/128x128.png"
     },
     "manifest_version" : 2
 }
