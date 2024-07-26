@@ -7,9 +7,9 @@
         "scripts" : ["background.js"]
     },
     "icons" : {
-        "16" : "Images/16x16.png",
-        "48" : "Images/48x48.png",
-        "128" : "Images/128x128.png"
+        "16" : "Icons/16x16.png",
+        "48" : "Icons/48x48.png",
+        "128" : "Icons/128x128.png"
     },
     "manifest_version" : 2
 }
