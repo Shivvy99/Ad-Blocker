@@ -1,0 +1,15 @@
+{
+    "name" : "Shiven's Ad Blocker",
+    "version" : "1.0",
+    "description" : "Blocks ads on the internet",
+    "permissions" : ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "icons" : {
+        "16" : "16x16",
+        "48" : "48x48",
+        "128" : "128x128"
+    },
+    "manifest_version" : 2
+}
