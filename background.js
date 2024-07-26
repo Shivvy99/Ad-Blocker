@@ -17,6 +17,6 @@ const blocked_urls = ["*://*.doubleclick.net/*",
 
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {return {cancel: true}},
-    {urls: [blocked_urls]},
+    {urls: blocked_urls},
     ["blocking"]
-);
+)

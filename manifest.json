@@ -6,7 +6,7 @@
     "background" : {
         "scripts" : ["background.js"]
     },
-    "Images" : {
+    "icons" : {
         "16" : "Images/16x16.png",
         "48" : "Images/48x48.png",
         "128" : "Images/128x128.png"
