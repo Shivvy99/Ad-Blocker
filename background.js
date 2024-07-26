@@ -1,4 +1,4 @@
-blocked_urls = ["*://*.doubleclick.net/*",
+const blocked_urls = ["*://*.doubleclick.net/*",
                 "*://*.googleadservices.com/*",
                 "*://*.googlesyndication.com/*",
                 "*://*.moatads.com/*",
@@ -11,11 +11,12 @@ blocked_urls = ["*://*.doubleclick.net/*",
 	            "*://*.exponential.com/*",
 	            "*://*.quantserve.com/*",
 	            "*://*.scorecardresearch.com/*",
-	            "*://*.zedo.com/*",]
+	            "*://*.zedo.com/*",
+                "*://partner.googleadservices.com/*",]
 
 
 chrome.webRequest.onBeforeRequest.addListener(
-    function(details) {return {cancel: true};},
-    {"urls": [blocked_urls]},
+    function(details) {return {cancel: true}},
+    {urls: [blocked_urls]},
     ["blocking"]
 );
