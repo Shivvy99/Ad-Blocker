@@ -13,12 +13,6 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["block_location.js", "block_banners.js"]
-        }
-    ],
     "icons": {
         "16": "Icons/16x16.png",
         "48": "Icons/48x48.png",
