@@ -20,3 +20,20 @@ chrome.webRequest.onBeforeRequest.addListener(
     {urls: blocked_urls},
     ["blocking"]
 )
+
+// Block pop-up windows
+chrome.windows.onCreated.addListener(function(window) {
+    if (window.type === "popup") {
+        chrome.windows.remove(window.id);
+    }
+});
+
+// Block interstitial ads by removing overlays
+chrome.webNavigation.onCompleted.addListener(function(details) {
+    chrome.tabs.executeScript(details.tabId, {
+        code: `
+            const interstitials = document.querySelectorAll('.interstitial-ad-class'); // Adjust selector
+            interstitials.forEach(ad => ad.remove());
+        `
+    });
+}, { url: [{ urlMatches: '<all_urls>' }] });
